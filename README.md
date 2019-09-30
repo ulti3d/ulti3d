@@ -14,6 +14,7 @@
   *  https://www.youtube.com/watch?v=_EfWVUJjBdA
       * Bed Level G-Code Files: http://www.thingiverse.com/thing:3235018
   *  https://www.youtube.com/watch?v=5eqTmb01cBk
+  *  https://www.youtube.com/watch?v=RJC7N4Vb9AY
   
 <a name="optionalupgrades"/>  
 
