@@ -1,0 +1,18 @@
+M75 ; Start Print Timer and Engage Fil Sensor if USB Printing
+G92 E0 ; Reset Extruder distance to 0
+G1 E-2 ; Retracts filament to prevent blobs during probing
+M84 E ; Disable E Motor for probe accuracy on direct drive systems
+G28 ; home all axes
+G28 Z ; home Z to get more accurate Z position
+G29; EZABL mesh generation
+G4 S10; wait for heaters to recover
+M117 Purge extruder
+G92 E0 ; reset extruder
+G1 Z1.0 F3000 ; move z up little
+G1 X0.1 Y20 Z0.3 F5000.0 ; move to start-line position
+G1 X0.1 Y100.0 Z0.3 F750.0 E15 ; draw 1st line
+G1 X0.4 Y100.0 Z0.3 F5000.0 ; move to side a little
+G1 X0.4 Y20 Z0.3 F750.0 E30 ; draw 2nd line
+G92 E0 ; reset extruder
+G1 Z1.0 F3000 ; move z up little
+M117 Printing.....
